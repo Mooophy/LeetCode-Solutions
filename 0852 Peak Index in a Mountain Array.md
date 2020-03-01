@@ -1,7 +1,7 @@
 ### 852. Peak Index in a Mountain Array
 * `Binary Search`
 * O(lg(n)), O(1)
-* Compare `A[mid]` and `A[mid - 1]`, go left or right depending on the comparison result.
+* Compare `A[mid]` with `A[mid - 1]` and `A[mid + 1]`, go left or right depending on the comparison result.
 * C++
 ```cpp
 class Solution {
