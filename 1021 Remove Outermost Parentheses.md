@@ -1,3 +1,4 @@
+### 1021. Remove Outermost Parentheses.md
 * `Stack`
 * O(n), O(1)
 * Although tagged with `Stack`, a counter is enough.
