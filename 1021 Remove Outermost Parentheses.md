@@ -1,6 +1,6 @@
 * `Stack`
 * O(n), O(1)
-* Although tagged with `Stack`, a counter can do the job.
+* Although tagged with `Stack`, a counter is enough.
 * C++
 ```cpp
 class Solution {
