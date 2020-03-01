@@ -45,3 +45,44 @@ public:
     }
 };
 ```
+* C#
+```csharp
+public class Solution {
+    public bool IsAlienSorted(string[] words, string order) {
+        var language = ToLanguage(order);
+        
+        Func<string, string, bool> less = (string l, string r) => {
+            int i = 0;
+            
+            for(; i < l.Length && i < r.Length; ++i){
+                if(language[l[i] - 'a'] == language[r[i] - 'a']){
+                    continue;
+                }else{
+                    return language[l[i] - 'a'] < language[r[i] - 'a'];
+                }    
+            }
+            
+            return l.Length < r.Length;             
+        };
+        
+        for(int i = 0 ; i < words.Length - 1; ++i){
+            if(!less(words[i], words[i + 1])){
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    private IList<int> ToLanguage(string order){
+        var res = new List<int>(new int[26]);
+        int count = 0;
+        
+        foreach(var c in order){
+            res[c - 'a'] = count++;
+        }
+        
+        return res;
+    }
+}
+```
