@@ -32,7 +32,7 @@ public:
 };
 ```
 * C#
-```cshap
+```csharp
 public class Solution {
     public IList<string> LetterCasePermutation(string s) {
         var res = new List<string>();
