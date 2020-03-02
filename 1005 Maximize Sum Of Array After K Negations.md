@@ -1,6 +1,6 @@
 ### 1005. Maximize Sum Of Array After K Negations
 * Greedy
-* O(n lg(n)), O(1)
+* O(n * lg(n)), O(1)
 * There exists O(n) solution with Counting Sort.
 * C++
 ```cpp
