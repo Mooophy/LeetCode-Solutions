@@ -1,6 +1,6 @@
 ### 953. Verifying an Alien Dictionary
 * `Hash Table`
-* O(n * s), O(1)lambda
+* O(n * s), O(1)
 * Idea: build the hash table for the language. Then check if it is sorted with a lambda.
 * Lexicographical comparison : a lexicographical comparison is the kind of comparison generally used to sort words alphabetically in dictionaries; It involves comparing sequentially the elements that have the same position in both ranges against each other until one element is not equivalent to the other. The result of comparing these first non-matching elements is the result of the lexicographical comparison. If both sequences compare equal until one of them ends, the shorter sequence is lexicographically less than the longer one.
 * C++
