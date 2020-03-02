@@ -45,3 +45,40 @@ public:
     }
 };
 ```
+
+* C#
+```csharp
+public class Solution {
+    public bool FindTarget(TreeNode root, int k) {
+        return Dfs(root, root, k);
+    }
+    
+    private bool Dfs(TreeNode curr, TreeNode root, int k){
+        if(curr == null){
+            return false;
+        }
+        
+        if(2 * curr.val != k && Search(root, k - curr.val)){
+            return true;
+        }
+        
+        return Dfs(curr.left, root, k) || Dfs(curr.right, root, k);
+    }
+    
+    private bool Search(TreeNode root, int val){
+        if(root == null){
+            return false;
+        }
+        
+        if(root.val == val){
+            return true;
+        }
+        
+        if(val > root.val){
+            return Search(root.right, val);
+        }
+        
+        return Search(root.left, val);
+    }    
+}
+```
