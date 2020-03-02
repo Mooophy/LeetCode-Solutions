@@ -2,7 +2,7 @@
 * `Greedy`
 * O(n), O(1)
 * Proof:
-g(s0) = 1 + g(s1) where s1 is the string trimmed with the first balanced string. This proof should be quite similar to Theorem 16.1 on CLRS
+g(s0) = 1 + g(s1) where s1 is the string trimmed with the first balanced string. This proof looks quite similar to Theorem 16.1 on CLRS
 
 * C++
 ```cpp
