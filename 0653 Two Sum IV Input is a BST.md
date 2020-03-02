@@ -2,6 +2,7 @@
 * `Tree`, `Dfs`
 * O(n * lg(n)), O(1)
 * Idea: Traverse the tree with dfs, then search `k - root->val` in the BST. Quite a few other solutions exisit.
+* C++
 ```cpp
 /**
  * Definition for a binary tree node.
