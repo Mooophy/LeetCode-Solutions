@@ -1,7 +1,7 @@
 ### 925. Long Pressed Name
 * `Two Pointers`
 * O(n), O(1)
-* Loop Invariant: `j has not reached end and only normal copy and long pressed encounted so far.`
+* Loop Invariant: `j has not reached end and only normal copy and long pressed has been encountered so far.`
 * Detail: There two cases here, copy and long (pressed), both normal. If both failed then return false. After j has reached end, i must reach its end as well. Otherwise, there are letters left in string `name`. This case also yield false.
 * C++
 ```cpp
