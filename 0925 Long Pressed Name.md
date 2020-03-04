@@ -1,4 +1,5 @@
 ### 925. Long Pressed Name
+* `Two Pointers`
 * O(n), O(1)
 * li
 * C++
