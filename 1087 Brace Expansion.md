@@ -31,8 +31,8 @@ public:
                 options.push_back(s.at(i));
         }
         
-        for(auto c : options){
-            spawn(curr + c, i + 1, res, s);
+        for(auto o : options){
+            spawn(curr + option, i + 1, res, s);
         }
     }
 };
