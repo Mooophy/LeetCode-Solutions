@@ -4,7 +4,7 @@
 * O(s.size * dic.size), O(s.size * dic.size)
 * Loop Invariant:
 ```
-s[0, i) has been checked
+s[0, i) has been confirmed that it can be segmented into one or more dictionary words.
 ```
 * C++ (Top Down)
 ```cpp
