@@ -6,12 +6,12 @@
 ```cpp
 class Solution {
 public:
-    bool wordBreak(string s, vector<string>& dic) {
+    bool wordBreak(string s, vector<string> const& dic) {
         vector<int> memo(s.size() + 1, -1);
         return dp(0, s, dic, memo);
     }
     
-    bool dp(int i, string const& s, vector<string>& dic, vector<int>& memo){
+    bool dp(int i, string const& s, vector<string> const& dic, vector<int>& memo){
         if(memo.at(i) >= 0){
             return memo.at(i);
         }
