@@ -32,7 +32,6 @@ public class Solution {
             int sum   = froma + fromb + carry;
             carry     = sum / 2;
             res = Convert.ToChar(sum % 2 + '0').ToString() + res;
-            
             i -= i >= 0 ? 1 : 0;
             j -= j >= 0 ? 1 : 0;
         }
