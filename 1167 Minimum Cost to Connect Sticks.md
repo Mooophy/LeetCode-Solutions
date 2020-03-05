@@ -1,6 +1,6 @@
 ### 1167. Minimum Cost to Connect Sticks
 * `Greedy`
-* O(n * lg(n)) O(n)
+* O(n * lg(n)), O(n)
 * Loop Invariant: 
 ```
 Sticks are connected and cost recorded while the min heap is shrinking towards size = 1
