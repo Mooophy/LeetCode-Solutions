@@ -1,7 +1,10 @@
 ### 1167. Minimum Cost to Connect Sticks
 * `Greedy`
 * O(n * lg(n)) O(n)
-* Loop Invariant: `Sticks are connected and cost recorded while the size of the min heap is shrinking towards 1`
+* Loop Invariant: 
+```
+Sticks are connected and cost recorded while the size of the min heap is shrinking towards 1
+```
 * Proof
 ```
 Suppose set A holds all sticks
