@@ -24,14 +24,14 @@ public:
             return;
         }
         
-        vector<char> options;
+        string options;
         
         for(; s.at(i) != '}'; ++i){
             if(isalpha(s.at(i)))
                 options.push_back(s.at(i));
         }
         
-        for(auto o : options){
+        for(auto option : options){
             spawn(curr + option, i + 1, res, s);
         }
     }
