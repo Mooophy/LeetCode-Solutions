@@ -7,7 +7,7 @@ Sticks are connected and cost recorded while the min heap is shrinking towards s
 ```
 * Proof
 ```
-Suppose set A holds all sticks, then for any iteration there exists equations such that:
+Suppose set A holds all sticks, then for any iteration there exists equations:
 
 x := argmin(A)
 y := argmin(A - {x})
