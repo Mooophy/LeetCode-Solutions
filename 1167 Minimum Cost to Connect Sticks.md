@@ -13,7 +13,8 @@ x := argmin(A)
 y := argmin(A - {x})
 f(A) => x + y + f(A - {x} - {y} + {x + y})
 
-As shown above, the local optimal option can lead to make global optimal option. Hence, Greedy applies, DP is unnecessary.
+As shown above, the local optimal option can lead to global optimal option. 
+Hence, Greedy applies, DP is unnecessary.
 ```
 * C++
 ```cpp
