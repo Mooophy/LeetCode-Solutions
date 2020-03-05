@@ -1,7 +1,7 @@
 ### 1087. Brace Expansion
 * `Backtracking`, `Dfs`
 * O(a ^ n) where a <- (0, s.size()), O(1) (ignore space overhead for result and recursion)
-* Loop Invariant: `Spawn children by appending opions at i into child passed in`
+* Loop Invariant: `Spawn children by appending opion at i into child passed in`
 * C++
 ```cpp
 class Solution {
