@@ -9,8 +9,8 @@ Sticks are connected and cost recorded while the min heap is shrinking towards s
 ```
 Suppose set A holds all sticks, then for any iteration there exists equations:
 
-x := argmin(A)
-y := argmin(A - {x})
+x := min(A)
+y := min(A - {x})
 f(A) => x + y + f(A - {x} - {y} + {x + y})
 
 As shown above, the local optimal option can lead to global optimal option. 
