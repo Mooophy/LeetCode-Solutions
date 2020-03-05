@@ -8,19 +8,19 @@ class Solution {
 public:
     vector<string> expand(string s) {
         vector<string> res;
-        fill("", 0, res, s);
+        spawn("", 0, res, s);
         sort(res.begin(), res.end());
         return res;
     }
     
-    void fill(string curr, int i, vector<string>& res, string const& s){
+    void spawn(string curr, int i, vector<string>& res, string const& s){
         if(i == s.size()){
             res.push_back(curr);
             return;
         }
         
         if(isalpha(s.at(i))){
-            fill(curr + s.at(i), i + 1, res, s);
+            spawn(curr + s.at(i), i + 1, res, s);
             return;
         }
         
@@ -32,7 +32,7 @@ public:
         }
         
         for(auto c : options){
-            fill(curr + c, i + 1, res, s);
+            spawn(curr + c, i + 1, res, s);
         }
     }
 };
