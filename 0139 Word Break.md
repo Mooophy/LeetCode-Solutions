@@ -2,6 +2,10 @@
 
 * `Dynamic Programming`
 * O(s.size * dic.size), O(s.size * dic.size)
+* Loop Invariant:
+```
+s[0, i) has been checked
+```
 * C++ (Top Down)
 ```cpp
 class Solution {
