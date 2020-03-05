@@ -1,6 +1,6 @@
 ### 67. Add Binary
 * O(n), O(1)
-* Loop Invariant: `ss`
+* Loop Invariant: The sum have been written into res if any condition is true: i has not reached end, j has not reached end, carry exists.
 * C++
 ```cpp
 class Solution {
