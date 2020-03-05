@@ -7,14 +7,14 @@ Sticks are connected and cost recorded while the min heap is shrinking towards s
 ```
 * Proof
 ```
-Suppose set A holds all sticks, then for each iteration there exists equations such that:
+Suppose set A holds all sticks, then for any iteration there exists equations such that:
 
 x := argmin(A)
 y := argmin(A - {x})
 cost += x + y
 f(A) => x + y + f(A - {x} - {y} + {x + y})
 
-Once size(A) => 1, the cost is the final answer
+As shown above, the local optimal option can lead to make global optimal option. Hence, Greedy applies, DP is unnecessary.
 ```
 * C++
 ```cpp
