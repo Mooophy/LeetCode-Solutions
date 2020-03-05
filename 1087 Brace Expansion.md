@@ -1,6 +1,7 @@
 ### 1087. Brace Expansion
 * `Backtracking`, `Dfs`
 * O(a ^ n) where a <- (0, s.size()), O(1) (ignore space overhead for result and recursion)
+* Loop Invariant: `Generate all children with opions at i`
 * C++
 ```cpp
 class Solution {
