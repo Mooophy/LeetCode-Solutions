@@ -20,3 +20,24 @@ public:
     }
 };
 ```
+* C#
+```csharp
+public class Solution {
+    public string AddBinary(string a, string b) {
+        string res = "";
+        
+        for(int i = a.Length - 1, j = b.Length - 1, carry = 0; i >= 0 || j >= 0 || carry > 0; ){
+            int froma = i >= 0 ? (a[i] - '0') : 0;
+            int fromb = j >= 0 ? (b[j] - '0') : 0;
+            int sum   = froma + fromb + carry;
+            carry     = sum / 2;
+            res = Convert.ToChar(sum % 2 + '0').ToString() + res;
+            
+            i -= i >= 0 ? 1 : 0;
+            j -= j >= 0 ? 1 : 0;
+        }
+        
+        return res;        
+    }
+}
+```
