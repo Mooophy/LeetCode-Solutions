@@ -1,7 +1,10 @@
 ### 369. Plus One Linked List
 * `Linked List`
 * O(n), O(1) (ignored overhead for recursion)
-* LI
+* LI: 
+```
+Linked list nodes amoung current head to tail have been processed for +1 calculation
+```
 * C++
 ```cpp
 class Solution {
