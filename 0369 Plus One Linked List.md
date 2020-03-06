@@ -1,6 +1,6 @@
 ### 369. Plus One Linked List
 * `Linked List`
-* O(n), O(1) (ignored overhead caused by recursion)
+* O(n), O(1) (ignored overhead for recursion)
 * LI
 * C++
 ```cpp
