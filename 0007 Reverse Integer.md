@@ -1,7 +1,7 @@
 ### 7. Reverse Integer
 * `Math`
 * O(sizeof(int)), O(1)
-* 
+* Notes: 1. res must be 64bits to avoid overflow. 2. `-` can be processed with `/` and `%` correctly. 3.Except type casting is more strict for C#, the rest is same thing for the two languages.
 * C++
 ```cpp
 class Solution {
