@@ -17,3 +17,18 @@ public:
     }
 };
 ```
+
+* C#
+```csharp
+public class Solution {
+    public int Reverse(int x) {
+        long res = 0;
+        
+        for(; x != 0; x /= 10){
+            res = 10 * res + x % 10;
+        }
+        
+        return Convert.ToInt32(res > Convert.ToInt64(Int32.MaxValue) ||  res < Convert.ToInt64(Int32.MinValue) ? 0 : res);        
+    }
+}
+```
