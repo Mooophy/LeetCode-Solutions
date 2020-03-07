@@ -1,6 +1,9 @@
 ### 724. Find Pivot Index
 * O(n), O(1)
-* LI: `For range [0, i), sum of a[0..i) is not equal to sum of a(i..end)`
+* LI: 
+```r
+For range [0, i), sum of a[0..i) is not equal to sum of a(i..end)
+```
 * C++
 ```cpp
 class Solution {
