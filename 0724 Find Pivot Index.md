@@ -9,8 +9,6 @@ For range [0, i), sum of a[0 .. i - 1] is not equal to sum of a[i + 1 .. end)
 class Solution {
 public:
     int pivotIndex(vector<int>& a) {
-        int res = -1;
-        
         for(int l = 0, r = accumulate(a.begin(), a.end(), 0), i = 0; i < a.size(); ++i){
             if(l == r - a.at(i)){
                 return i;
@@ -20,7 +18,7 @@ public:
             r -= a.at(i);
         }        
         
-        return res;
+        return -1;
     }
 };
 ```
