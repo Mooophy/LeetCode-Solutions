@@ -2,7 +2,7 @@
 * O(n), O(1)
 * LI: 
 ```r
-For range [0, i), sum of a[0..i) is not equal to sum of a(i..end)
+For range [0, i), sum of a[0 .. i - 1] is not equal to sum of a[i + 1 .. end)
 ```
 * C++
 ```cpp
