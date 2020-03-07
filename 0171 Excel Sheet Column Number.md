@@ -10,6 +10,7 @@ public:
         
         for(auto c : s){
             res = res * 26 + (c - 'A' + 1); 
+            //                          ^ where the offset is addressed
         }
         
         return res;
