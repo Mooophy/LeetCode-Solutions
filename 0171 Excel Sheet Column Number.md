@@ -8,8 +8,8 @@ public:
     int titleToNumber(string s) {
         int res = 0;
         
-        for(int64_t at = 1, i = s.size() - 1; i >= 0; --i, at *= 26){
-            res += at * (s.at(i) - 'A' + 1); 
+        for(auto c : s){
+            res = res * 26 + (c - 'A' + 1); 
         }
         
         return res;
