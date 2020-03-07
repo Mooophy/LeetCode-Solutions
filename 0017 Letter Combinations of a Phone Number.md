@@ -1,6 +1,10 @@
 ### 17. Letter Combinations of a Phone Number
 * `Backtracking`
 * O(4 ^ n), O(1)
+* LI
+```r
+All children up to i have been spawned
+```
 * C++
 ```cpp
 class Solution {
