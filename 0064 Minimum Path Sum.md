@@ -12,7 +12,7 @@ class Solution {
 public:
     int minPathSum(vector<vector<int>>& g) {
         unordered_map<int, int> memo;
-        return g.empty() ? 0 : dp(0, 0, g, memo);
+        return dp(0, 0, g, memo);
     }
     
     int dp(int r, int c, vector<vector<int>> const& g, unordered_map<int, int>& memo){
@@ -26,18 +26,11 @@ public:
         if(r == m - 1 && c == n - 1){
             return memo[code] = g[r][c]; 
         } 
+   
+        int rht = c + 1 < n ? g[r][c] + dp(r, c + 1, g, memo) : numeric_limits<int>::max();
+        int dwn = r + 1 < m ? g[r][c] + dp(r + 1, c, g, memo) : numeric_limits<int>::max();
         
-        int res = numeric_limits<int>::max();
-        
-        if(r + 1 < m){
-            res = min(res, g[r][c] + dp(r + 1, c, g, memo));
-        }
-        
-        if(c + 1 < n){
-            res = min(res, g[r][c] + dp(r, c + 1, g, memo));
-        }
-        
-        return memo[code] = res;
+        return memo[code] = min(rht, dwn);
     }
 };
 ```
