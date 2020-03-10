@@ -23,3 +23,30 @@ public:
     }
 };
 ```
+* C#
+```csharp
+public class Solution {
+    public ListNode AddTwoNumbers(ListNode a, ListNode b) {
+        ListNode head = null, tail = null;
+        
+        for(int carry = 0; a != null || b != null || carry != 0; ){
+            int froma = a != null ? a.val : 0;
+            int fromb = b != null ? b.val : 0;
+            int sum = carry + froma + fromb;
+            carry = sum / 10;
+            var created = new ListNode(sum % 10);
+            
+            if(head == null){
+                head = tail = created;
+            }else{
+                tail = tail.next = created;
+            }
+            
+            a = a != null ? a.next : null;
+            b = b != null ? b.next : null;
+        }
+        
+        return head;
+    }
+}
+```
