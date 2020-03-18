@@ -1,5 +1,6 @@
 ### 701. Insert into a Binary Search Tree
 * `BST`
+* O(lg(n)), O(1)
 * C++
 ```cpp
 class Solution {
