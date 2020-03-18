@@ -1,5 +1,6 @@
 ### 1110. Delete Nodes And Return Forest
 * `DFS`, `Post Order Traversal`
+* O(n), O(n)
 * C++
 ```cpp
 class Solution {
