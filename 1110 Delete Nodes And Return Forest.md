@@ -9,7 +9,7 @@ public:
         vector<TreeNode*> res;
         postorder(root, hash, res);
         
-        if(root && !hash.count(root->val)){
+        if(root){
             res.push_back(root);
         }
         
